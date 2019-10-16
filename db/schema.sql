@@ -5,9 +5,13 @@ USE burgers_db;
 
 /* Create a table for all your star wars characters */
 CREATE TABLE burgers (
-	id Int( 11 ) AUTO_INCREMENT NOT NULL,
+	id Int AUTO_INCREMENT NOT NULL,
 	burger_name VARCHAR( 255) NOT NULL,
 	devoured BOOLEAN,
 	/* Set ID as primary key */
-	PRIMARY KEY ( `id` )
+	PRIMARY KEY (id)
 );
+
+INSERT INTO burgers (burger_name, devoured) VALUES ('Cheese burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Hamburger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Crabby patty', FALSE);
